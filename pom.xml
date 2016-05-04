@@ -655,6 +655,14 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.oracle.soa</groupId>
+			<artifactId>com.oracle.webservices.fmw.client</artifactId>
+			<version>${oracle.bpm.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
 		<!-- <dependency> <groupId>com.oracle.soa</groupId> <artifactId>wlfullclient</artifactId> 
 			<version>${oracle.bpm.version}</version> <type>jar</type> <scope>compile</scope> 
 			</dependency> -->
