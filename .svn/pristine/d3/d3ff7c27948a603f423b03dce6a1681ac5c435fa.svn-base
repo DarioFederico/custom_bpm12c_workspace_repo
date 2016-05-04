@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlparserinfo>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/icon_activity/icon_s_start.png</source>
+	  	<id>START</id>
+	  	<label>Start</label>
+	</info>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/icon_activity/icon_s_end.png</source>
+	  	<id>END</id>
+	  	<label>End</label>
+	</info>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_flow.png</source>
+	  	<id>FLOW</id>
+	  	<label>Flow</label>
+	</info>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_switch.png</source>
+	  	<id>SWITCH</id>
+	  	<label>Switch</label>
+	</info>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_while.png</source>
+	  	<id>WHILE</id>
+	  	<label>While</label>
+	</info>
+	<info>
+		<gubn>Icon/Flow Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_connect.png</source>
+	  	<id>CONNECTION</id>
+	  	<label>Connection</label>
+	</info>
+	
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_assign.png</source>
+	  	<label>Assign</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_mail.png</source>
+	  	<label>Mail</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_flow.png</source>
+	  	<label>Flow</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_human.png</source>
+	  	<label>Human</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_invoke.png</source>
+	  	<label>Invoke</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_javaembedding.png</source>
+	  	<label>JavaEmbedding</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_pick.png</source>
+	  	<label>Pick</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_reaceive.png</source>
+	  	<label>Receive</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_reply.png</source>
+	  	<label>Reply</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_switch.png</source>
+	  	<label>Switch</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_throw.png</source>
+	  	<label>Throw</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_terminate.png</source>
+	  	<label>Terminate</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_wait.png</source>
+	  	<label>Wait</label>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_while.png</source>
+	  	<label>While</label>
+	</info>
+	
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_aq_adapter.png</source>
+	  	<label>AQ Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_database_adapter.png</source>
+	  	<label>Database Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_decision_service.png</source>
+	  	<label>Decision Service</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_ejb_webservice.png</source>
+	  	<label>EJB Webservice</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_file_adapter.png</source>
+	  	<label>File Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_ftp_adapter.png</source>
+	  	<label>FTP Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_ejb_webservice.png</source>
+	  	<label>Java Webservice</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_jms_adapter.png</source>
+	  	<label>JMS Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_mq_adapter.png</source>
+	  	<label>MQ Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_application_adapter.png</source>
+	  	<label>Application Adapter</label>
+	</info>
+	<info>
+		<gubn>BPEL Service</gubn>
+	  	<source>assets/images/bpel_service/icon_bfel_s_partner_link.png</source>
+	  	<label>PartnerLink</label>
+	</info>
+	
+	
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_autosystem_adapter.png</source>
+	  	<label>AutoSystem Adapter</label>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_email_adapter.png</source>
+	  	<label>Mail Adapter</label>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_ok_adapter.png</source>
+	  	<label>Human OK Adapter</label>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_P_adapter.png</source>
+	  	<label>Human P Adapter</label>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_subprocess_adapter.png</source>
+	  	<label>Subprocess Adapter</label>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_wait_adapter.png</source>
+	  	<label>Wait Adapter</label>
+	</info>
+	
+</xmlparserinfo>

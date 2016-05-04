@@ -1,0 +1,1844 @@
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<process> 
+<cikey>4070160</cikey>
+<domain>KOEMBPM_AC</domain>
+<process_id>M_AccountClosing</process_id>
+<process_name>결산 메인 프로세스</process_name>
+<revision_tag>1.0</revision_tag>
+<business_key></business_key>
+<creation_date>2010-08-30 10:00</creation_date>
+<modify_date>2010-08-30 10:00</modify_date>
+<state>1</state>
+<title>[2010-08] 결산 메인 프로세스</title>
+<conversation_id>bpel://localhost/KOEMBPM_COMN/C_AccountClosingInitiator~1.0/4080640-BpInv0-BpSeq0.3-4</conversation_id>
+<root_id>4080640</root_id>
+<parent_id>4080640</parent_id>
+<metadata></metadata>
+<index1></index1>
+<index2></index2>
+<index3></index3>
+<index4></index4>
+<index5></index5>
+<index6></index6>
+<webModelRepository>http://localhost:8081/sem/data/</webModelRepository>
+<activities>
+    <activity activity_id="startset" activity_name="Start Set">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date>2010-08-30 10:00</wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>startset%completion</sensor_name>
+		       <sensor_target>rcv_startSetService</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>startset</activity_id>
+		       <activity_name>Start Set</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date>2010-08-30 10:00</completion_date>
+		       <task_id></task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Closed</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>0</lead_time>
+		       <activity_lead_time>0</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-25" activity_name="AR Closing (여수)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-25%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_YS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-25</activity_id>
+		       <activity_name>AR Closing (여수)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5405</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-30" activity_name="AR Closing (울산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-30%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_US</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-30</activity_id>
+		       <activity_name>AR Closing (울산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5477</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-35" activity_name="AR Closing (대산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-35%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_DS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-35</activity_id>
+		       <activity_name>AR Closing (대산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5468</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-40" activity_name="AR Closing (마산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-40%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_MS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-40</activity_id>
+		       <activity_name>AR Closing (마산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5473</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-45" activity_name="AR Closing (동해)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-45%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_DH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-45</activity_id>
+		       <activity_name>AR Closing (동해)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5471</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-50" activity_name="AR Closing (군산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-50%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_GS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-50</activity_id>
+		       <activity_name>AR Closing (군산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-55ea</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-55" activity_name="AR Closing (포항)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-55%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_PH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-55</activity_id>
+		       <activity_name>AR Closing (포항)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5626</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-60" activity_name="AR Closing (평택)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-60%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_PT</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-60</activity_id>
+		       <activity_name>AR Closing (평택)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-55f9</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-65" activity_name="AR Closing (목포)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-65%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_MP</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-65</activity_id>
+		       <activity_name>AR Closing (목포)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-546c</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-70" activity_name="AR Closing (제주)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-70%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_JJ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-70</activity_id>
+		       <activity_name>AR Closing (제주)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-570c</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-10" activity_name="AR Closing (본사)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-10%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_HQ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-10</activity_id>
+		       <activity_name>AR Closing (본사)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5469</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-15" activity_name="AR Closing (부산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-15%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_BS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-15</activity_id>
+		       <activity_name>AR Closing (부산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-55f1</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-030-20" activity_name="AR Closing (인천)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-030-20%completion</sensor_name>
+		       <sensor_target>rcv_accountReceivableClosing_IC</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-030-20</activity_id>
+		       <activity_name>AR Closing (인천)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-543e</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-10" activity_name="INV Closing (본사)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-10%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_HQ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-10</activity_id>
+		       <activity_name>INV Closing (본사)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-546b</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-15" activity_name="INV Closing (부산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-15%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_BS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-15</activity_id>
+		       <activity_name>INV Closing (부산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-56a1</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-20" activity_name="INV Closing (인천)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-20%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_IC</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-20</activity_id>
+		       <activity_name>INV Closing (인천)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-560b</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-25" activity_name="INV Closing (여수)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-25%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_YS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-25</activity_id>
+		       <activity_name>INV Closing (여수)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-560c</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-30" activity_name="INV Closing (울산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-30%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_US</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-30</activity_id>
+		       <activity_name>INV Closing (울산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5430</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-35" activity_name="INV Closing (대산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-35%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_DS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-35</activity_id>
+		       <activity_name>INV Closing (대산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5474</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-40" activity_name="INV Closing (마산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-40%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_MS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-40</activity_id>
+		       <activity_name>INV Closing (마산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5466</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-45" activity_name="INV Closing (동해)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-45%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_DH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-45</activity_id>
+		       <activity_name>INV Closing (동해)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-546a</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-50" activity_name="INV Closing (군산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-50%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_GS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-50</activity_id>
+		       <activity_name>INV Closing (군산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-55ff</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-55" activity_name="INV Closing (포항)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-55%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_PH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-55</activity_id>
+		       <activity_name>INV Closing (포항)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-541a</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-60" activity_name="INV Closing (평택)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-60%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_PT</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-60</activity_id>
+		       <activity_name>INV Closing (평택)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-558a</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-65" activity_name="INV Closing (목포)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-65%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_MP</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-65</activity_id>
+		       <activity_name>INV Closing (목포)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-570b</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-050-70" activity_name="INV Closing (제주)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-050-70%completion</sensor_name>
+		       <sensor_target>rcv_inventoryClosing_JJ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-050-70</activity_id>
+		       <activity_name>INV Closing (제주)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-559c</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-10" activity_name="AP Closing (본사)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-10%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_HQ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-10</activity_id>
+		       <activity_name>AP Closing (본사)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-56f1</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-15" activity_name="AP Closing (부산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-15%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_BS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-15</activity_id>
+		       <activity_name>AP Closing (부산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5502</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-20" activity_name="AP Closing (인천)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-20%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_IC</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-20</activity_id>
+		       <activity_name>AP Closing (인천)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-543a</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-25" activity_name="AP Closing (여수)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-25%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_YS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-25</activity_id>
+		       <activity_name>AP Closing (여수)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-55ef</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-30" activity_name="AP Closing (울산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-30%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_US</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-30</activity_id>
+		       <activity_name>AP Closing (울산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-559e</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-35" activity_name="AP Closing (대산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-35%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_DS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-35</activity_id>
+		       <activity_name>AP Closing (대산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-561f</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-40" activity_name="AP Closing (마산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-40%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_MS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-40</activity_id>
+		       <activity_name>AP Closing (마산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5571</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-45" activity_name="AP Closing (동해)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-45%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_DH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-45</activity_id>
+		       <activity_name>AP Closing (동해)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5585</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-50" activity_name="AP Closing (군산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-50%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_GS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-50</activity_id>
+		       <activity_name>AP Closing (군산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-556f</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-55" activity_name="AP Closing (포항)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-55%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_PH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-55</activity_id>
+		       <activity_name>AP Closing (포항)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5713</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-60" activity_name="AP Closing (평택)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-60%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_PT</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-60</activity_id>
+		       <activity_name>AP Closing (평택)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5578</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-65" activity_name="AP Closing (목포)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-65%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_MP</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-65</activity_id>
+		       <activity_name>AP Closing (목포)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-559f</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-70" activity_name="AP Closing (제주)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-010-70%completion</sensor_name>
+		       <sensor_target>rcv_accountPayableClosing_JJ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-70</activity_id>
+		       <activity_name>AP Closing (제주)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5587</task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-10" activity_name="BM Closing (본사)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-10%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_HQ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-10</activity_id>
+		       <activity_name>BM Closing (본사)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-54f3</task_id>
+		       <participants_id>100661</participants_id>
+		       <participants>곽선미</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-15" activity_name="BM Closing (부산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-15%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_BS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-15</activity_id>
+		       <activity_name>BM Closing (부산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-54cb</task_id>
+		       <participants_id>100240</participants_id>
+		       <participants>엄윤희</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-20" activity_name="BM Closing (인천)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-20%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_IC</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-20</activity_id>
+		       <activity_name>BM Closing (인천)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5484</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants>곽은정</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-25" activity_name="BM Closing (여수)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-25%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_YS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-25</activity_id>
+		       <activity_name>BM Closing (여수)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5583</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-30" activity_name="BM Closing (울산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-30%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_US</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-30</activity_id>
+		       <activity_name>BM Closing (울산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-546e</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분19초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-35" activity_name="BM Closing (대산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-35%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_DS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-35</activity_id>
+		       <activity_name>BM Closing (대산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-558d</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-40" activity_name="BM Closing (마산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-40%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_MS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-40</activity_id>
+		       <activity_name>BM Closing (마산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-547f</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-45" activity_name="BM Closing (동해)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-45%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_DH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-45</activity_id>
+		       <activity_name>BM Closing (동해)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5479</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-50" activity_name="BM Closing (군산)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-50%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_GS</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-50</activity_id>
+		       <activity_name>BM Closing (군산)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-558c</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-55" activity_name="BM Closing (포항)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-55%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_PH</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-55</activity_id>
+		       <activity_name>BM Closing (포항)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-54f2</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-60" activity_name="BM Closing (평택)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-60%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_PT</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-60</activity_id>
+		       <activity_name>BM Closing (평택)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-53d2</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-65" activity_name="BM Closing (목포)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-65%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_MP</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-65</activity_id>
+		       <activity_name>BM Closing (목포)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5570</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-060-70" activity_name="BM Closing (제주)">
+        <wi_data>
+		       <wi_creation_date>2010-08-30 10:00</wi_creation_date>
+		       <wi_completion_date></wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>at-060-70%completion</sensor_name>
+		       <sensor_target>rcv_businessManagementClosing_JJ</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-060-70</activity_id>
+		       <activity_name>BM Closing (제주)</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-08-30 10:00</creation_date>
+		       <completion_date></completion_date>
+		       <task_id>5ef52049c4a38328:24ec5997:12ab2ca51fd:-5504</task_id>
+		       <participants_id>100478</participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>Running</status>
+		       <outcome>COMPLETE</outcome>
+		       <lead_time>5시44분22초</lead_time>
+		       <activity_lead_time>5시44분18초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+</activities>
+</process> 

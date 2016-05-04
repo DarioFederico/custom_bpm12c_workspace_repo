@@ -1,0 +1,100 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<table class="board_03" summary="BBS Article Control">
+	<caption>프로세스현황</caption>
+	
+	<thead>
+	<!-- 
+		<tr> 
+			<td colspan="7"> <table width="100%" cellspacing="0" cellpadding="3">
+				<tr> 
+				  <td class="table_search_line" colspan="11"></td>
+				</tr>
+				<tr class="bg_gray_F7F7F7"> 
+				  <td width="120" align="right">제목 : </td>
+				  <td width="188"> 
+					<input name="title" id="task_title" type="text" value="${param.title}">
+				  </td>
+				  <td width="70" align="right">&nbsp;</td>
+				  <td width="80" align="right">상태 : </td>
+				  <td><select name="task_state" class="input_combobox">
+					  <option value="" ${param.task_state == '' ? 'selected' : ''}>전체</option>
+					  <option value="ASSIGNED" ${param.task_state == 'ASSIGNED' ? 'selected' : ''}>진행중</option>
+					  <option value="COMPLETED" ${param.task_state == 'COMPLETED' ? 'selected' : ''}>완료</option>
+					</select> </td>
+				  
+				  <td width="80" align="right" nowrap>게시물 수 : <br></td>
+				  <td colspan="2">
+					<select name="tasmaxRows" class="input_combobox">
+					  <option value="5" ${param.maxRows == '5' ? 'selected' : ''}>5</option>
+					  <option value="10" ${param.maxRows == '10' ? 'selected' : ''}>10</option>
+					  <option value="15" ${param.maxRows == '15' ? 'selected' : ''}>15</option>
+					  <option value="20" ${param.maxRows == '20' ? 'selected' : ''}>20</option>
+					  <option value="300" ${param.maxRows == '300' ? 'selected' : ''}>300</option>
+					</select>
+				  </td>
+				  
+				  <td width="">&nbsp;</td>
+				  <td width="62" align="right">&nbsp; </td>
+				  <td>&nbsp;</td>
+				  <td width="200" align="right"><button id="searchbtn1" onclick="javascript:searchTasks('#task_list')">search</button>
+				</tr>
+			  </table></td>
+		  </tr>
+		  -->
+		<tr>
+			<!-- 
+			<th scope="col">도착일시</th>
+			<th scope="col">번호</th>
+			<th scope="col">제목</th>
+			<th scope="col">상태</th>
+			<th scope="col">지연일수</th>
+			 -->
+			<th scope="col">Flow ID</th>
+			<th scope="col">Title</th>
+			<th scope="col">Number</th>
+			<th scope="col">Initiator</th>
+			<th scope="col">Process Name</th>
+			<th scope="col">Status</th>
+		
+		</tr>
+	</thead>
+	<tbody>
+		<c:choose>
+		<c:when test="${fn:length(requestScope.result) > 0}">
+		<c:set var="tc" value="0" />
+		<c:forEach var="componentInstance" begin="0" items="${requestScope.result}" varStatus="ts">
+		
+		<tr>
+			<td class="center"><a href="javascript:openFlowTrace('${componentInstance.flowId}')">${componentInstance.flowId}</a></td>
+			<td class="center"><a href="javascript:openAlterFlow('${fn:substringAfter(componentInstance.id, ':')}')">Instance #${fn:substringAfter(componentInstance.id, ':')} of ${componentInstance.componentName}</a></td>
+			<td class="center">${fn:substringAfter(componentInstance.id, ':')}</td>
+			<td class="center">${componentInstance.creator}</td>
+			<td class="center">${componentInstance.componentName}</td>
+			<td class="center">${componentInstance.normalizedStateAsString}</td>
+		</tr>
+		<c:set var="tc" value="${ts.index}" />
+		</c:forEach>
+		<c:forEach var="lc" begin="${tc + 1}" end="5" step="1">
+		<tr class="table_padding"> 
+			<td align="center" colspan="6">&nbsp;</td>
+		</tr>
+		</c:forEach>
+		</c:when>
+		<c:otherwise>
+		<tr class="table_padding"> 
+			<td align="center">&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">&nbsp;</td>
+		</tr>
+		</c:otherwise>
+		</c:choose>
+	</tbody>
+</table>
+<input type="hidden" id="pageSize" name="pageSize" value=""/>
+<input type="hidden" name="partition" value="default">
+<input type="hidden" name="composite" value="ExpenseReportApplication">
+<input type="hidden" name="service" value="ExpenseReportProcessDirect.service">
+		

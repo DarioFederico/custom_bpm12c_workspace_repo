@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activity_mapping>
+	<domain>BUILTONE</domain>	<!-- BPEL DOMAIN Design ǄO ze½`Ǻ´󠿪Ȓ(ex. /root/{domain}/{process_id}_{revision_tag}_{busienss_key}.xml -->
+	<process_id>SCENARIO_2</process_id> <!-- BPEL Process ID -->
+	<revision_tag>1.0</revision_tag>	<!-- BPEL Process Version -->
+	<business_key></business_key> <!-- BPEL Process Business Key (1°³G BPEL ¿¡ ´수 ¿©·¯°³G µ񁛀π» °¡n°¥ °瀬 »耫) -->
+	<physicalModelRepository>D:\ProjectSites\10 BuiltOne\04 Deploy\data\</physicalModelRepository>
+	<webModelRepository>http://localhost:8081/sem/data/</webModelRepository>
+	<activities>
+		<activity>
+			<activity_id>BpTest1</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>경매신청</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest2</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>경매개시</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest3</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>경매신청동기</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest4</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>경매결정</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest5</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>결정송달</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest6</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>공과금최고</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest7</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>채권신고최고</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest8</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>현황조사</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest9</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>감정평가</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest10</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>최저경매가결정</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest11</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>경매준비</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest12</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>게시.공고</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest13</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>입찰서류열람</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest14</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>입찰</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest15</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>낙찰여부결정</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest16</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>낙찰허가확정</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest17</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>대금납부</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest18</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>소유권이전</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest19</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>등기촉탁</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest20</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>인도명령</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest21</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>인도소송</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest22</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>인도</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest23</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>등기완료</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest24</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>항고</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest25</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>청구의의의 소</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest26</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>신청각하</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest27</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>신청취하</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest28</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>차순위입찰</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest29</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>불허.유찰</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+		<activity>
+			<activity_id>BpTest30</activity_id>		<!-- BPEL Activity Unique Id -->
+			<activity_name>재경매</activity_name>		<!-- BPEL Activity activity_name -->
+		</activity>
+	</activities>
+</activity_mapping>

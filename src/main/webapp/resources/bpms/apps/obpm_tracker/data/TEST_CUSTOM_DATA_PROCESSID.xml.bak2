@@ -1,0 +1,187 @@
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<process> 
+<cikey>5940005</cikey>
+<domain>KOEMBPM_HR</domain>
+<process_id>M_RequestDiligenceIndolence</process_id>
+<process_name>근태신청</process_name>
+<revision_tag>1.0</revision_tag>
+<business_key></business_key>
+<creation_date>2010-09-27 16:25</creation_date>
+<modify_date>2010-09-27 16:26</modify_date>
+<state>5</state>
+<state_txt>완료됨 (정상)</state_txt>
+<title>[ 80 ] 근태신청 프로세스</title>
+<conversation_id>bpel://localhost/KOEMBPM_EVENT/E_KOEM_APPS_HR_EVENT_DILIGENCE~1.0/5930010-BpInv0-BpSeq1.6-3</conversation_id>
+<root_id>913962EB11216F3DE044002128570476</root_id>
+<parent_id>5930010</parent_id>
+<metadata></metadata>
+<index1></index1>
+<index2>100039</index2>
+<index3>근태신청</index3>
+<index4>Y</index4>
+<index5></index5>
+<index6></index6>
+<webModelRepository>http://bpm.koem.or.kr:7777/content/prism2/model/</webModelRepository>
+<activities>
+    <activity activity_id="startset" activity_name="start set">
+        <wi_data>
+		       <wi_creation_date>2010-09-27 16:25</wi_creation_date>
+		       <wi_completion_date>2010-09-27 16:25</wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>startset%completion</sensor_name>
+		       <sensor_target>rcv_startSetService</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>startset</activity_id>
+		       <activity_name>start set</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-09-27 16:25</creation_date>
+		       <completion_date>2010-09-27 16:25</completion_date>
+		       <task_id></task_id>
+		       <participants_id></participants_id>
+		       <participants></participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>종료</status>
+		       <outcome></outcome>
+		       <lead_time>0</lead_time>
+		       <activity_lead_time>0</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-010-00" activity_name="근태신청">
+        <wi_data>
+		       <wi_creation_date>2010-09-27 16:25</wi_creation_date>
+		       <wi_completion_date>2010-09-27 16:25</wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>AT-010-00%completion</sensor_name>
+		       <sensor_target>rcv_AT-010-00</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-010-00</activity_id>
+		       <activity_name>근태신청</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-09-27 16:25</creation_date>
+		       <completion_date>2010-09-27 16:25</completion_date>
+		       <task_id></task_id>
+		       <participants_id>100039</participants_id>
+		       <participants>유세종</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>종료</status>
+		       <outcome></outcome>
+		       <lead_time>1초</lead_time>
+		       <activity_lead_time>1초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+    <activity activity_id="AT-020-00" activity_name="근태결재">
+        <wi_data>
+		       <wi_creation_date>2010-09-27 16:25</wi_creation_date>
+		       <wi_completion_date>2010-09-27 16:26</wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>AT-020-00%completion</sensor_name>
+		       <sensor_target>rcv_AT-020-00</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-020-00</activity_id>
+		       <activity_name>근태결재</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-09-27 16:25</creation_date>
+		       <completion_date>2010-09-27 16:26</completion_date>
+		       <task_id>5ef52049c4a38328:5080d93d:12b4848fe01:-710f</task_id>
+		       <participants_id>190010 , 190011</participants_id>
+		       <participants>김희철,최찬</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>종료</status>
+		       <outcome>승인</outcome>
+		       <lead_time>1분28초</lead_time>
+		       <activity_lead_time>1분26초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+		
+		
+		
+		
+		 <activity activity_id="AT-030-00" activity_name="근태결재">
+        <wi_data>
+		       <wi_creation_date>2010-09-27 16:25</wi_creation_date>
+		       <wi_completion_date>2010-09-27 16:26</wi_completion_date>
+		       <wi_state>completion</wi_state>
+        </wi_data>
+        <sensor_data>
+		       <sensor_name>AT-020-00%completion</sensor_name>
+		       <sensor_target>rcv_AT-020-00</sensor_target>
+		       <eval_point>completion</eval_point>
+        </sensor_data>
+        <custom_data>
+		       <activity_type></activity_type>
+		       <activity_id>AT-020-00</activity_id>
+		       <activity_name>근태결재</activity_name>
+		       <group_processing_type></group_processing_type>
+		       <creation_date>2010-09-27 16:25</creation_date>
+		       <completion_date>2010-09-27 16:26</completion_date>
+		       <task_id>5ef52049c4a38328:5080d93d:12b4848fe01:-710f</task_id>
+		       <participants_id>190010 , 190011</participants_id>
+		       <participants>김희철,최찬</participants>
+		       <participants_group_id></participants_group_id>
+		       <participants_group></participants_group>
+		       <is_fault>N</is_fault>
+		       <is_overdue>N</is_overdue>
+		       <is_skip>N</is_skip>
+		       <status>종료</status>
+		       <outcome>승인</outcome>
+		       <lead_time>1분28초</lead_time>
+		       <activity_lead_time>1분26초</activity_lead_time>
+		       <retry_count></retry_count>
+		       <is_participation>Y</is_participation>
+        </custom_data>
+		</activity>
+		
+		
+		
+		
+</activities>
+</process> 

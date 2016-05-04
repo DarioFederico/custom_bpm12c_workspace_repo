@@ -1,0 +1,104 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>비용발생</title>
+
+<link rel="stylesheet" href="<c:url value='../../resources/skin/css/popup.css' />" />
+<link rel="stylesheet" type="text/css" href="../../resources/skin/datetimepicker/jquery.datetimepicker.css"/>
+<style type="text/css">
+.custom-date-style {
+	background-color: red !important;
+}
+.input{	
+}
+.input-wide{
+	width: 500px;
+}
+</style>
+<script type="text/javascript" src="<c:url value='../../resources/skin/js/jquery-1.11.0.min.js' />"></script>
+<script src="../../resources/skin/datetimepicker/jquery.js"></script>
+<script src="../../resources/skin/datetimepicker/build/jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+<div>
+	<form name="invoke" action='<spring:url value='/soa/composite/invoke' />' method="post">
+	
+		<table class="board_reservation_month">
+			<tbody>
+				<tr>
+					<th>비용번호</th>
+					<td><input type="text" id="expenseNumber" name="expenseNumber" value=""/></td>
+				</tr>
+				<tr>
+					<th>지불구분</th>
+					<td>
+						<select name="paymentType">
+							<option value="corporation">corporation</option>
+							<option value="individual">individual</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>비용구분</th>
+					<td>
+						<input type="radio" name="expenseType">차량유지비
+						<input type="radio" name="expenseType">접대비
+						<input type="radio" name="expenseType">복리후생비
+						<input type="radio" name="expenseType">출장비
+					</td>
+				</tr>
+				<tr>
+					<th>처리기한</th>
+					<td><input type="text" id="dueDate" name="dueDate" value="2016-01-01T00:00:00"/></td>
+				</tr>
+				<tr>
+					<th>결재</th>
+					<td><input type="text" id="approval" name="approval" value=""/></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<input type="submit" value="신청">
+
+
+		<input type="hidden" name="partition" value="default">
+		<input type="hidden" name="composite" value="ExpenseReportApplication">
+		<input type="hidden" name="service" value="ExpenseReportProcessDirect.service">
+		<input type="hidden" name="operation" value="start">
+		<input type="hidden" name="payloadXML" value="">
+		
+		<input type="hidden" name="requesterId" value="">
+		<input type="hidden" name="requestDate" value="">
+		<input type="hidden" name="amount" value="">
+		<input type="hidden" name="justification" value="">
+		<input type="hidden" name="line" value="">
+		<input type="hidden" name="type" value="">
+		<input type="hidden" name="ruleset" value="">
+	
+	</form>
+</div>
+
+
+<br><br>
+- Approval (결재)
+  - ApprovalLine (결재라인)
+  - ApprovalType (결재유형)
+<br> 
+
+
+  
+</body>
+<script>
+$('#dueDate').datetimepicker({
+	step:'30',
+	mask:'0000-00-00 00:00:00',
+	format:'Y-m-d h:i:s'
+});
+</script>
+</html>

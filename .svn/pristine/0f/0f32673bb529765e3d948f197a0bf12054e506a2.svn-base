@@ -1,0 +1,193 @@
+CREATE TABLE PROCESS_MODEL(
+  PARTITION_ID VARCHAR2(100 BYTE) NOT NULL
+, COMPOSITE_ID VARCHAR2(100 BYTE) NOT NULL
+, PROCESS_ID VARCHAR2(100 BYTE) NOT NULL
+, PROCESS_NAME VARCHAR2(100 BYTE)
+, REVISION_TAG VARCHAR2(50 BYTE) NOT NULL
+, MODEL_XML CLOB
+, AUTHOR VARCHAR2(100 BYTE)
+, CREATE_DATE DATE
+, UPDATE_DATE DATE
+, DESCRIPTION VARCHAR2(1000 BYTE)
+, CONSTRAINT PROCESS_MODEL_PK PRIMARY KEY(PARTITION_ID , COMPOSITE_ID , PROCESS_ID , REVISION_TAG )
+);
+
+
+CREATE TABLE CUSTOM_BPM_TRACKER_ERROR_LOG (
+  GUID VARCHAR2(100 BYTE) NOT NULL
+, ERROR_OBJECT VARCHAR2(100 BYTE) NOT NULL
+, ERROR_SUMMARY VARCHAR2(1000 BYTE)
+, ERROR_CODE NUMBER(*, 0)
+, ERROR_MESSAGE VARCHAR2(1000 BYTE)
+, CREATE_DATE TIMESTAMP(6) DEFAULT current_timestamp
+, CONSTRAINT CUSTOM_BPM_TRACKER_ERROR_L_PK PRIMARY KEY (GUID)
+);
+
+CREATE TABLE CUSTOM_BPM_TRACKER_DATA (
+  PARTITION_ID VARCHAR2(100 BYTE) NOT NULL
+, COMPOSITE_ID VARCHAR2(100 BYTE) NOT NULL
+, REVISION_TAG VARCHAR2(50 BYTE) NOT NULL
+, PROCESS_ID VARCHAR2(100 BYTE) NOT NULL
+, PROCESS_NAME VARCHAR2(100 BYTE) NOT NULL
+, INSTANCE_ID NUMBER(*, 0) NOT NULL
+, ACTIVITY_ID VARCHAR2(100 BYTE) NOT NULL
+, ACTIVITY_NAME VARCHAR2(100 BYTE) NOT NULL
+, ACTIVITY_TYPE VARCHAR2(30 BYTE) NOT NULL
+, LABEL VARCHAR2(100 BYTE) NOT NULL
+, CREATION_DATE TIMESTAMP(6) DEFAULT current_timestamp
+, COMPLETION_DATE TIMESTAMP(6)
+, STATUS VARCHAR2(20 BYTE)
+, IS_FAULT CHAR(1 BYTE) DEFAULT 'N' NOT NULL
+, IS_OVERDUE CHAR(1 BYTE) DEFAULT 'N' NOT NULL
+, IS_SKIP CHAR(1 BYTE) DEFAULT 'N' NOT NULL
+, ROOT_INSTANCE_ID VARCHAR2(100 BYTE)
+, ROOT_INSTANCE_CREATION_DATE TIMESTAMP(6)
+, PARENT_INSTANCE_ID VARCHAR2(100 BYTE)
+, PARENT_ACTIVITY_ID VARCHAR2(100 BYTE)
+, PARTICIPANTS_ID VARCHAR2(1000 BYTE)
+, PARTICIPANTS_NAME VARCHAR2(1000 BYTE)
+, EXP_DATE TIMESTAMP(6)
+, CONSTRAINT CUSTOM_BPM_TRACKER_DATA_PK PRIMARY KEY (INSTANCE_ID,ACTIVITY_ID)
+);
+
+
+======== Package HEADER =============
+create or replace PACKAGE BPM_CUSTOM_TRACKER_PKG AS
+
+  PROCEDURE SET_CUSTOM_BPM_TRACKER_DATA(P_PARTITION_ID IN VARCHAR2,
+                                          P_COMPOSITE_ID IN VARCHAR2,
+                                          P_REVISION_TAG IN VARCHAR2,
+                                          P_PROCESS_ID IN VARCHAR2,
+                                          P_PROCESS_NAME IN VARCHAR2,
+                                          P_INSTANCE_ID IN NUMBER,
+                                          P_ACTIVITY_ID IN VARCHAR2,
+                                          P_ACTIVITY_NAME IN VARCHAR2,
+                                          P_ACTIVITY_TYPE IN VARCHAR2,
+                                          P_LABEL IN VARCHAR2,
+                                          P_CREATION_DATE IN TIMESTAMP,
+                                          P_COMPLETION_DATE IN TIMESTAMP,
+                                          P_STATUS IN VARCHAR2,
+                                          P_IS_FAULT IN VARCHAR2,
+                                          P_IS_OVERDUE IN VARCHAR2,
+                                          P_IS_SKIP IN VARCHAR2,
+                                          P_ROOT_INSTANCE_ID IN NUMBER,
+                                          P_ROOT_INSTANCE_CREATION_DATE IN TIMESTAMP,
+                                          P_PARENT_INSTANCE_ID IN NUMBER,
+                                          P_PARENT_ACTIVITY_ID IN VARCHAR2,
+                                          P_PARTICIPANTS_ID IN VARCHAR2,
+                                          P_PARTICIPANTS_NAME IN VARCHAR2,
+                                          P_EXP_DATE IN TIMESTAMP,
+                                          P_ERROR_CODE OUT NUMBER,
+                                          P_ERROR_MESSAGE OUT VARCHAR2);
+
+  PROCEDURE SET_CUSTOM_BPM_TRACKER_ERROR(ERROR_OBJECT IN VARCHAR2, P_ERROR_SUMMARY IN VARCHAR2, P_ERROR_CODE IN NUMBER, P_ERROR_MESSAGE IN VARCHAR2);
+
+END BPM_CUSTOM_TRACKER_PKG;
+
+======== Package BODY =============
+create or replace PACKAGE BODY BPM_CUSTOM_TRACKER_PKG AS
+PROCEDURE SET_CUSTOM_BPM_TRACKER_DATA(P_PARTITION_ID IN VARCHAR2,
+                                          P_COMPOSITE_ID IN VARCHAR2,
+                                          P_REVISION_TAG IN VARCHAR2,
+                                          P_PROCESS_ID IN VARCHAR2,
+                                          P_PROCESS_NAME IN VARCHAR2,
+                                          P_INSTANCE_ID IN NUMBER,
+                                          P_ACTIVITY_ID IN VARCHAR2,
+                                          P_ACTIVITY_NAME IN VARCHAR2,
+                                          P_ACTIVITY_TYPE IN VARCHAR2,
+                                          P_LABEL IN VARCHAR2,
+                                          P_CREATION_DATE IN TIMESTAMP,
+                                          P_COMPLETION_DATE IN TIMESTAMP,
+                                          P_STATUS IN VARCHAR2,
+                                          P_IS_FAULT IN VARCHAR2,
+                                          P_IS_OVERDUE IN VARCHAR2,
+                                          P_IS_SKIP IN VARCHAR2,
+                                          P_ROOT_INSTANCE_ID IN NUMBER,
+                                          P_ROOT_INSTANCE_CREATION_DATE IN TIMESTAMP,
+                                          P_PARENT_INSTANCE_ID IN NUMBER,
+                                          P_PARENT_ACTIVITY_ID IN VARCHAR2,
+                                          P_PARTICIPANTS_ID IN VARCHAR2,
+                                          P_PARTICIPANTS_NAME IN VARCHAR2,
+                                          P_EXP_DATE IN TIMESTAMP,
+                                          P_ERROR_CODE OUT NUMBER,
+                                          P_ERROR_MESSAGE OUT VARCHAR2)
+    AS
+      V_IS_FAULT VARCHAR2(1);
+      V_IS_OVERDUE VARCHAR2(1);
+      V_IS_SKIP VARCHAR2(1);
+    BEGIN
+      V_IS_FAULT := CASE WHEN (P_IS_FAULT = '' OR P_IS_FAULT IS NULL) THEN 'N' ELSE P_IS_FAULT END;
+      V_IS_OVERDUE := CASE WHEN (P_IS_OVERDUE = '' OR P_IS_OVERDUE IS NULL) THEN 'N' ELSE P_IS_OVERDUE END;
+      V_IS_SKIP := CASE WHEN (P_IS_SKIP = '' OR P_IS_SKIP IS NULL) THEN 'N' ELSE P_IS_SKIP END;
+       
+      MERGE INTO CUSTOM_BPM_TRACKER_DATA
+      USING DUAL
+          ON (INSTANCE_ID = P_INSTANCE_ID AND ACTIVITY_ID = P_ACTIVITY_ID)
+          WHEN MATCHED THEN
+            UPDATE SET COMPLETION_DATE = P_COMPLETION_DATE
+                     , STATUS = P_STATUS
+                     , IS_FAULT = P_IS_FAULT
+                     , IS_OVERDUE = P_IS_OVERDUE
+                     , IS_SKIP = P_IS_SKIP
+          WHEN NOT MATCHED THEN
+            INSERT
+              (PARTITION_ID,
+               COMPOSITE_ID,
+               REVISION_TAG,
+               PROCESS_ID,
+               PROCESS_NAME,
+               INSTANCE_ID,
+               ACTIVITY_ID,
+               ACTIVITY_TYPE,
+               ACTIVITY_NAME,
+               LABEL,
+               STATUS,
+               IS_FAULT,
+               IS_OVERDUE,
+               IS_SKIP,
+               ROOT_INSTANCE_ID,
+               ROOT_INSTANCE_CREATION_DATE,
+               PARENT_INSTANCE_ID,
+               PARENT_ACTIVITY_ID,
+               PARTICIPANTS_ID,
+               PARTICIPANTS_NAME,
+               EXP_DATE)
+            VALUES
+              (P_PARTITION_ID,
+               P_COMPOSITE_ID,
+               P_REVISION_TAG,
+               P_PROCESS_ID,
+               P_PROCESS_NAME,
+               P_INSTANCE_ID,
+               P_ACTIVITY_ID,
+               P_ACTIVITY_TYPE,
+               P_ACTIVITY_NAME,
+               P_LABEL,
+               P_STATUS,
+               V_IS_FAULT,
+               V_IS_OVERDUE,
+               V_IS_SKIP,
+               P_ROOT_INSTANCE_ID,
+               P_ROOT_INSTANCE_CREATION_DATE,
+               P_PARENT_INSTANCE_ID,
+               P_PARENT_ACTIVITY_ID,
+               P_PARTICIPANTS_ID,
+               P_PARTICIPANTS_NAME,
+               P_EXP_DATE);
+           
+      EXCEPTION
+          WHEN OTHERS THEN
+              -- WRITE SENSOR ERROR LOG
+              P_ERROR_CODE := SQLCODE;
+              P_ERROR_MESSAGE := SQLERRM;
+             
+              SET_CUSTOM_BPM_TRACKER_ERROR('SET_CUSTOM_BPM_TRACKER_DATA', '[' || P_INSTANCE_ID || '/' || P_ACTIVITY_ID || '/' || P_STATUS || ']', SQLCODE, SQLERRM);
+    END;
+   
+    PROCEDURE SET_CUSTOM_BPM_TRACKER_ERROR(ERROR_OBJECT IN VARCHAR2, P_ERROR_SUMMARY IN VARCHAR2, P_ERROR_CODE IN NUMBER, P_ERROR_MESSAGE IN VARCHAR2)
+    AS
+    BEGIN
+        INSERT INTO CUSTOM_BPM_TRACKER_ERROR_LOG VALUES (SYS_GUID(), ERROR_OBJECT, P_ERROR_SUMMARY, P_ERROR_CODE, P_ERROR_MESSAGE, CURRENT_TIMESTAMP);
+        --COMMIT;
+    END;
+END BPM_CUSTOM_TRACKER_PKG;

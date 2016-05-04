@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<title>Oracle BPM 11g - Process Tracking Monitoring</title>
+<link href="<c:url value='/resources/js/qtip2/jquery.qtip.css' />" rel="stylesheet">
+<script src="<c:url value='/resources/bpms/js/jquery-ui/jquery-1.10.2.js'/>"></script>
+<script src="<c:url value='/resources/bpms/js/default.js'/>"></script>
+<script src="<c:url value='/resources/bpms/js/request.js'/>"></script>
+<script src="<c:url value='/resources/js/qtip2/jquery.qtip.js'/>"></script>
+
+<script type="text/javascript">
+	function callUrl(node_id, label, task_number) {
+		
+		var u = "<c:url value='/${param.issso}/custom/getProcessAggregatedTaskByUser?username=weblogic&activityid="+node_id+"&activityname="+label+"&assignmentfilter=ALL'/>";
+				
+		CommonUtility.openWindow(u,"tracker_model","500","400","yes","yes");
+		
+	}
+</script>
+<iframe frameborder='no' src="<spring:url value="/resources/bpms/apps/obpm_tracker/OracleBPMTracker.jsp" />?mode=${param.mode}&partition=${param.partition}&compositeid=${param.compositeid}&processid=${param.processid}&version=${param.version}&instanceid=${param.instanceid}&business_key=${param.business_key}&activity_list_view=${param.activity_list_view}&legend_view=${param.legend_view}&refresh_time=${param.refresh_time}&title_view=${param.title_view}&only_process_view=${param.only_process_view}&minimap_view=${param.minimap_view}&scale=${param.scale}&assignmentFilter=${param.assignmentFilter}&username=${param.username}&issso=${param.issso}"
+			scrolling="no" style='width:100%;height:99%;z-index:-1';/>

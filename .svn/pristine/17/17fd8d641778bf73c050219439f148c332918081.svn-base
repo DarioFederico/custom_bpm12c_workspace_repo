@@ -1,0 +1,36 @@
+package oracle.bpm.workspace.client.web;
+
+import java.util.Map;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import oracle.bpm.workspace.client.config.SOAServiceClient;
+import oracle.bpm.workspace.client.service.CustomBPMService;
+
+@Controller
+public class CustomBPMController {
+	@Resource(name = "soaClient")
+	protected SOAServiceClient soaClient;
+	
+	@Resource(name="CustomBPMService")
+	protected CustomBPMService customBPMService;
+	
+	private Logger logger = LoggerFactory.getLogger(this.getClass()); // Logger
+
+	@RequestMapping("/bpm/process/instances")
+	public String process_instances(HttpSession session, @RequestParam(required = false) Map<String, String> params,
+			ModelMap model) throws Exception {
+
+		model.addAttribute("result", null);
+
+		return "soa/home/subs/processInstances";
+	}
+}

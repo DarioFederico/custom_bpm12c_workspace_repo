@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+/*KOEM BPMS CSS : Jung Jung Ah  *^-^* 2010.07 */
+
+/*공통*/
+body {font:9pt dotum, 돋움, arial, sans-serif; color:#333333; _text-align:center;}
+body {
+scrollbar-3dlight-color:#E6E7E1;
+scrollbar-arrow-color:#3675C8;
+scrollbar-track-color:#E6E7E1;
+scrollbar-darkshadow-color:#E6E7E1;
+scrollbar-face-color:#E6E7E1;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-shadow-color:#BEC0B1;
+}
+
+input {  height: 21px; border: #DCDCDC 1px solid; font-family: "돋움"; font-size: 9pt; color: #333333; text-indent: 1px;}  
+.textfield {BORDER-RIGHT: #C7D3E9 1px solid; BORDER-TOP: #C7D3E9 1px solid; FONT-SIZE: 10pt; BORDER-LEFT: #C7D3E9 1px solid; BORDER-BOTTOM: #C7D3E9 1px solid;}
+
+a {font-size:9pt; text-decoration:none;}
+a:link, a:visited {color:#333333; text-decoration:none;}
+a:hover, a:active {color:#5780CE; text-decoration:none;}
+a:area {blr:expression(this.onFocus=this.blur())}
+:focus {-moz-outline-style:none;}
+
+
+.padding_t5{padding-top:5px;}
+.padding_l8{padding-left:8px;}
+ 
+.radio
+ {  BORDER-RIGHT: 0px;   
+     BORDER-TOP: 0px;
+     MARGIN-BOTTOM:-2px;
+     BORDER-LEFT: 0px;
+     BORDER-BOTTOM: 0px
+} 
+
+.navi_bar{height:10px;width:1px;BACKGROUND-COLOR: #DEDEDE;}
+
+/* Side Navigation Bar */
+
+ol, ul, li {list-style:none; padding:0; margin:0;}
+#snb {
+	float:left;
+	position:absolute;
+	top:70px;
+	width:179px;
+	left:19px;
+	background:#FFFFFF repeat-y top;
+}
+#snb .mnLeft {margin-top:10px;}
+#snb .mnLeft ul li a {color:#333333; display:block; padding:7px 0 6px 40px; background:url(../../image/icon_folder_on.gif) no-repeat 15px 5px; _height:1%;}
+#snb .mnLeft ul li.subOpen a { padding:6px 0 5px 39px; background:#EEEEEE url(../../image/icon_folder_on.gif) no-repeat 15px 5px; border:1px solid #D3D3D3;}
+#snb .mnLeft ul li.subClose a {color:#333333; display:block; padding:7px 0 6px 40px; background:url(../../image/icon_folder_off.gif) no-repeat 15px 5px;}
+#snb .mnLeft ul li.subClose a:hover {padding:6px 0 5px 39px; background:#EEEEEE url(../../image/icon_folder_on.gif) no-repeat 15px 5px; border:1px solid #D3D3D3;}
+
+
+/* Button정의 */
+
+.btn_01, .btn_02, .btn_03, .btn_04, .btn_05, .btn_06, .btn_07
+{
+  font-family: 돋움;
+  font-size: 8pt;
+  color: #333333;
+  padding-top: 1;
+  cursor: hand;
+  height: 23;
+  border: 0;
+  text-align:center;
+  letter-spacing:-1;
+}
+.btn_01 { background: url(../../image/btn_01.gif); width: 46;height: 23; }
+.btn_02 { background: url(../../image/btn_02.gif); width: 50;height: 23; }
+.btn_03 { background: url(../../image/btn_03.gif); width: 63;height: 23; }
+.btn_04 { background: url(../../image/btn_04.gif); width: 74;height: 23; }
+.btn_05 { background: url(../../image/btn_05.gif); width: 85;height: 23; }
+.btn_06 { background: url(../../image/btn_06.gif); width: 96;height: 23; }
+.btn_07 { background: url(../../image/btn_07.gif); width: 107;height: 23; }
+.btn_other { font-family: "돋움"; font-size: 8pt; color: #6B8EBF; border: 0; background: url(../../image/btn_other.gif); width: 60;height: 21; }
+.btn_logout { font-family: "돋움"; font-size: 8pt; color: #6B8EBF; border: 0; background: url(../../image/btn_logout.gif); width: 56;height: 20; }
+
+/* text 정의 */
+
+.logout, .btn_other {
+	font-family:"돋움", "돋움체";
+	font-size: 8pt;
+	Color: #6B8EBF;
+	}
+	
+.leftmenu {
+	font-family:"돋움", "돋움체";
+	font-size: 9pt;
+	color: #333333;
+	text-decoration:none;
+	}
+
+.tabletitle {font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: bold; color: #ffffff; text-decoration:none}
+.titlefont	{font-family: "돋움"; font-size: 11pt; line-height: 120%; font-weight: bold; color: #333333; text-decoration:none}
+.titlefont2	{font-family: "돋움"; font-size: 9pt; line-height: 120%; font-weight: bold; color: #333333; text-decoration:none}
+.titlefont3	{font-family: "돋움"; font-size: 9pt; line-height: 120%; font-weight: bold; color: #5277AC; text-decoration:none}
+.mainfont_sb	{font-family: "돋움"; font-size: 8pt; line-height: 160%; font-weight: normal; color: #6B8EBF; text-decoration:none}
+.menufont	{font-family: "돋움"; font-size: 9pt; line-height: 120%; font-weight: normal; color: #5883A3; text-decoration:none}
+
+.board_num		{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 160%; font-weight: normal; color: #333333; text-decoration:none}
+a.board_num:link 	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 160%; font-weight: normal; color: #333333; text-decoration:none}
+a.board_num:visited	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 160%; font-weight: normal; color: #333333; text-decoration:none}
+a.board_num:active 	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 160%; font-weight: bold; color: #F7701F; text-decoration:none}
+a.board_num:hover 	{font-family: "돋움"; font-size:8pt;  font-style:normal; line-height: 160%; font-weight: bold; color:#F7701F; text-decoration:none}
+
+
+.mainfont_s		{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #888888; text-decoration:none}
+a.mainfont_s:link 	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #888888; text-decoration:none}
+a.mainfont_s:visited	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #888888; text-decoration:none}
+a.mainfont_s:active 	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #888888; text-decoration:underline}
+a.mainfont_s:hover 	 {font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #888888; text-decoration:underline}
+
+.btn			{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #5D5D5D; text-decoration:none}
+a.btn:link 		{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #5D5D5D; text-decoration:none}
+a.btn:visited		{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #5D5D5D; text-decoration:none}
+a.btn:active 		{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #8AABCE; text-decoration:none}
+a.btn:hover 	  	{font-family: "돋움"; font-size: 8pt; font-style:normal; line-height: 120%; font-weight: normal; color: #8AABCE; text-decoration:none}
+
+.mainfont120		{font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: normal; color: #333333; text-decoration:none}
+a.mainfont120:link 	{font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: normal; color: #333333; text-decoration:none}
+a.mainfont120:visited	{font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: normal; color: #333333; text-decoration:none}
+a.mainfont120:active 	{font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: normal; color: #F7701F; text-decoration:underline}
+a.mainfont120:hover 	{font-family: "돋움"; font-size: 9pt; font-style:normal; line-height: 120%; font-weight: normal; color: #F7701F; text-decoration:underline}
+
+.mainfont_b		{font-family: "돋움" ; font-size: 10pt; font-style:normal; line-height: 120%; font-weight: nomal; color: #6B8EBF; text-decoration:none}
+a.mainfont_b:link 		{font-family: "돋움"; font-size: 10pt; font-style:normal; line-height: 120%; font-weight: nomal; color: #6B8EBF; text-decoration:none}
+a.mainfont_b:visited	{font-family: "돋움"; font-size: 10pt; font-style:normal; line-height: 120%; font-weight: nomal; color: #6B8EBF; text-decoration:none}
+a.mainfont_b:active 	{font-family: "돋움"; font-size: 10pt; font-style:normal; line-height: 120%; font-weight: nomal; color: #6B8EBF; text-decoration:underline}
+a.mainfont_b:hover 	{font-family: "돋움"; font-size: 10pt; font-style:normal; line-height: 120%; font-weight: nomal; color: #6B8EBF; text-decoration:underline}
+
+.textboldlight{FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: "돋움" Serif;LETTER-SPACING: -0.2pt; FONT-WEIGHT:bolder;}
+
+.trlight {
+BACKGROUND-COLOR:#F2F2F2;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlparserinfo>
+	<info>	<!-- 지나가지 않은 라인의 순서는 항상 첫번째 -->
+	  	<source>assets/images/icon_arr_no.png</source>
+	  	<label>READY</label>
+	</info>
+	<info>	<!-- 지나간 라인의 순서는 항상 두번째 -->
+	  	<source>assets/images/icon_arr_ok.png</source>
+	  	<label>COMPLETED</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_play.png</source>
+	  	<label>RUNNING</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_stop.png</source>
+	  	<label>READY</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_skip.png</source>
+	  	<label>SKIP</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_error.png</source>
+	  	<label>ERROR</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_delay.png</source>
+	  	<label>WAITING</label>
+	</info>
+	<info>
+	  	<source>assets/images/icon_activity/icon_ok.png</source>
+	  	<label>COMPLETE</label>
+	</info>
+	<!--
+	<info>
+	  	<source>assets/images/icon_activity/icon_view.png</source>
+	  	<label>VIEW</label>
+	</info>
+	-->
+</xmlparserinfo>

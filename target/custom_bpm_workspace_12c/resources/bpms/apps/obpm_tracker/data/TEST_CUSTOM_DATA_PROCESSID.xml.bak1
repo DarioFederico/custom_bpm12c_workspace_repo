@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process>
+  <cikey>14650097</cikey>
+  <domain>TEST_DOMAIN</domain>
+  <process_id>PROCESSID</process_id>
+  <process_name>프로세스 네임</process_name>
+  <revision_tag>VERSION</revision_tag>
+  <business_key>BUSINESSKEY</business_key>
+  <creation_date>2010-12-04 10:47:04</creation_date>
+  <modify_date>2010-12-04 11:14:33</modify_date>
+  <state>3</state>
+  <state_txt>진행중 (오류발생)</state_txt>
+  <title>프로세스 타이틀</title>
+  <conversation_id>bpel://localhost/SEMBPM_MULTIEXPORT/ME0100_MultiExportMain~1.0/14650093-BpInv12-BpSeq16.103-2</conversation_id>
+  <root_id>79DCFD394EC553E3E04400306EF5B36D</root_id>
+  <parent_id>14650093</parent_id>
+  <metadata/>
+  <webModelRepository>data/</webModelRepository>
+  <activities>
+    <activity activity_id="BpTest1" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>경매신청</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>59분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest2" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>경매개시</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>91분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest5" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>결정송달</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>13분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest3" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>경매신청</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>43분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest14" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>입찰</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>25분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest15" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>낙찰여부결정</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>83분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest16" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>낙찰허가확정</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>33분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest18" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>소유권이전</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>48분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest20" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>인도명령</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>28분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+    <activity activity_id="BpTest24" activity_name="액디비티 네임">
+      <wi_data>
+        <wi_creation_date>2009-12-04 11:02:46</wi_creation_date>
+        <wi_completion_date>2009-12-04 11:11:33</wi_completion_date>
+        <wi_state>completion</wi_state>
+        <wi_transition/>
+        <wi_custom_id/>
+      </wi_data>
+      <sensor_data>
+        <sensor_name>ActivitySensorCMP_AT0090</sensor_name>
+        <sensor_target>SKIP_AT0090</sensor_target>
+        <action_name>tracker_action</action_name>
+        <eval_point>completion</eval_point>
+      </sensor_data>
+      <custom_data>
+        <activity_type>NORMAL</activity_type>
+        <activity_id>AT0090</activity_id>
+        <activity_name>항고</activity_name>
+        <creation_date>Thu Aug 26 2010</creation_date>
+        <modify_date>Thu Aug 26 2010</modify_date>
+        <completion_date>Thu Aug 26 2010</completion_date>
+        <task_id/>
+        <participants_id/>
+        <participants/>
+        <is_fault/>
+        <is_overdue/>
+        <is_skip/>
+        <status>Closed</status>
+        <lead_time>50분</lead_time>
+        <activity_lead_time>0초</activity_lead_time>
+        <retry_count/>
+        <is_participation>N</is_participation>
+      </custom_data>
+    </activity>
+  </activities>
+</process>

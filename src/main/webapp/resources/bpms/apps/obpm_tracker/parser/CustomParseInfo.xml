@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlparserinfo>
+	<info>
+	  <xpath></xpath>
+	  <storagetype>common</storagetype>
+	  <tagtype>tag</tagtype>
+	  <getvalue>domain,process_id,revision_tag,business_key,title,process_name,creation_date,modify_date,state,state_txt,webModelRepository,objSensorCommonResult,conversation_id</getvalue>
+	</info>
+	<info>
+	  <xpath>activities/activity</xpath>
+	  <storagetype>item</storagetype>
+	  <tagtype>attr</tagtype>
+	  <getvalue>activity_id=id</getvalue>
+	</info>
+	<info>
+	  <xpath>activities/activity</xpath>
+	  <storagetype>item</storagetype>
+	  <tagtype>attr</tagtype>
+	  <getvalue>activity_name=label</getvalue>
+	</info>
+	<info>
+	  <xpath>activities/activity/wi_data</xpath>
+	  <storagetype>item</storagetype>
+	  <tagtype>tag</tagtype>
+	  <getvalue>wi_state</getvalue>
+	</info>
+	<info>
+	  <xpath>activities/activity/wi_data</xpath>
+	  <storagetype>item</storagetype>
+	  <tagtype>tag</tagtype>
+	  <getvalue>wi_modify_date=wi_completion_date</getvalue>
+	</info>
+	<info>
+	  <xpath>activities/activity/custom_data</xpath>
+	  <storagetype>item</storagetype>
+	  <tagtype>tag</tagtype>
+	  <getvalue>activity_type,activity_id,activity_name,group_processing_type,creation_date,completion_date,task_id,participants_id,participants,participants_group_id,participants_group,is_fault,is_overdue,is_skip,status,outcome,activity_lead_time,lead_time,lead_time,retry_count,is_participation,creation_date,modify_date,total</getvalue>
+	</info>
+</xmlparserinfo>

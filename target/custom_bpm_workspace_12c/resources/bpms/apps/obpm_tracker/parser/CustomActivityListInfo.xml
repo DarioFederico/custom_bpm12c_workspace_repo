@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlparserinfo>
+	<info>
+		<gubn>Event</gubn>
+	  	<source>assets/images/icon_activity/icon_s_start.png</source>
+	  	<id>START</id>
+	  	<label>Start</label>
+        <type>START</type>
+	</info>
+	<info>
+		<gubn>Event</gubn>
+	  	<source>assets/images/icon_activity/icon_s_end.png</source>
+	  	<id>END</id>
+	  	<label>End</label>
+        <type>END</type>
+	</info>
+	<info>
+		<gubn>Gateway</gubn>
+	  	<source>assets/images/flow_activity/icon_and.png</source>
+	  	<id>AND</id>
+	  	<label>And</label>
+        <type>GATEWAY</type>
+	</info>
+	<info>
+		<gubn>Gateway</gubn>
+	  	<source>assets/images/flow_activity/icon_xor.png</source>
+	  	<id>XOR</id>
+	  	<label>Xor</label>
+        <type>GATEWAY</type>
+	</info>
+	<info>
+		<gubn>Gateway</gubn>
+	  	<source>assets/images/flow_activity/icon_or.png</source>
+	  	<id>OR</id>
+	  	<label>Or</label>
+        <type>GATEWAY</type>
+	</info>
+	<info>
+		<gubn>Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_manual.png</source>
+	  	<id>MANUAL</id>
+	  	<label>Manual</label>
+        <type>MANUAL</type>
+	</info>
+	<info>
+		<gubn>Activity</gubn>
+	  	<source>assets/images/flow_activity/icon_automatic.png</source>
+	  	<id>AUTOMATIC</id>
+	  	<label>Automatic</label>
+        <type>AUTOMATIC</type>
+	</info>
+	
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_assign.png</source>
+	  	<label>Assign</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_mail.png</source>
+	  	<label>Mail</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_flow.png</source>
+	  	<label>Flow</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_human.png</source>
+	  	<label>Human</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_invoke.png</source>
+	  	<label>Invoke</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_javaembedding.png</source>
+	  	<label>JavaEmbedding</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_pick.png</source>
+	  	<label>Pick</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_reaceive.png</source>
+	  	<label>Receive</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_reply.png</source>
+	  	<label>Reply</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_switch.png</source>
+	  	<label>Switch</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_throw.png</source>
+	  	<label>Throw</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_terminate.png</source>
+	  	<label>Terminate</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_wait.png</source>
+	  	<label>Wait</label>
+        <type>BPEL</type>
+	</info>
+	<info>
+		<gubn>BPEL Activity</gubn>
+	  	<source>assets/images/bpel_activity/icon_bfel_a_while.png</source>
+	  	<label>While</label>
+        <type>BPEL</type>
+	</info>
+
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_autosystem_1.png</source>
+	  	<label>AutoSystem Adapter 1</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_autosystem_2.png</source>
+	  	<label>AutoSystem Adapter 2</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_autosystem_3.png</source>
+	  	<label>AutoSystem Adapter 3</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_autosystem_adapter.png</source>
+	  	<label>AutoSystem Adapter</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_noti_1.png</source>
+	  	<label>Mail Adapter 1</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_noti_2.png</source>
+	  	<label>Mail Adapter 2</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_noti_3.png</source>
+	  	<label>Mail Adapter 3</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_approval_1.png</source>
+	  	<label>Human OK Adapter 1</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_approval_2.png</source>
+	  	<label>Human P Adapter 2</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_approval_3.png</source>
+	  	<label>Human P Adapter 3</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_confirm_1.png</source>
+	  	<label>Human P Adapter 4</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_confirm_2.png</source>
+	  	<label>Human P Adapter 5</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_human_confirm_3.png</source>
+	  	<label>Human P Adapter 6</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_subprocess_1.png</source>
+	  	<label>Subprocess Adapter</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_subprocess_2.png</source>
+	  	<label>Subprocess Adapter 2</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_subprocess_3.png</source>
+	  	<label>Subprocess Adapter 3</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_subprocess_adapter.png</source>
+	  	<label>Subprocess Adapter 4</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_wait_1.png</source>
+	  	<label>Wait Adapter 1</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_wait_2.png</source>
+	  	<label>Wait Adapter 2</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_wait_3.png</source>
+	  	<label>Wait Adapter 3</label>
+        <type>BPM</type>
+	</info>
+	<info>
+		<gubn>BPM Activity</gubn>
+	  	<source>assets/images/bpm_activity/icon_bpm_a_wait_adapter.png</source>
+	  	<label>Wait Adapter 4</label>
+        <type>BPM</type>
+	</info>
+</xmlparserinfo>

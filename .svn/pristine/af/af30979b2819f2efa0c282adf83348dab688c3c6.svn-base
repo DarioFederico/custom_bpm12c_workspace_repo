@@ -1,0 +1,185 @@
+/* CSS Document */
+
+
+/* ==================== Top Area ========================== */
+
+/* Masthead */
+.secondary_menu {color: #14446F;  font-Size:11px; text-decoration: none; padding: 0px 10px 0px 10px}
+.secondary_menu a:link {color: #14446F; text-decoration: none;}
+.secondary_menu a:visited {color: #14446F; text-decoration: none;}
+.secondary_menu a:active {color: #14446F; text-decoration: none;}
+.secondary_menu a:hover {color: #14446F; text-decoration: underline;}
+
+
+/* Top Navigation */
+.top_menu_bg {background-image: url("../img/basic/top_menu_bg_b.gif"); background-attachment: fixed;}
+
+.top_menu_on {
+	background-image: url("../img/basic/top_menu_on_b.gif");
+	background-repeat:no-repeat;
+	background-position: center;
+	height:3px;
+}
+
+.top_menu {color : #222; font-family: "Tahoma"; font-Size: 11px ; text-decoration: none; font-weight: bold; padding: 0px 20px 0px 20px; cursor:hand;}
+.top_menu a:link {color: #222; text-decoration: none;}
+.top_menu a:visited  {color: #222; text-decoration: none;}
+.top_menu a:active   {color: #14446F; text-decoration: none;}
+.top_menu a:hover    {color: #14446F; text-decoration: none;}
+
+.top_menu_2depth {color: #14446F;  font-family: "Tahoma";  font-Size:11px; text-decoration: none; line-height:11px; padding: 0px 10px 0px 10px; cursor:hand; }
+.top_menu_2depth a:link {color: #14446F; text-decoration: none;}
+.top_menu_2depth a:visited  {color: #14446F; text-decoration: none;}
+.top_menu_2depth a:active   {color: #14446F; text-decoration: none;}
+.top_menu_2depth a:hover    {color: #14446F; text-decoration: underline;}
+
+.page_title_component {font-size:16px;	color: #226C89;	text-decoration: none;	font-weight:bold;	line-height:17px;}
+
+
+/* ==================== Left Area ========================== */
+
+/* left Navigation */
+.left_title{font-family:"Tahoma"; font-Size: 13px ; color:#226C89; text-decoration: none; font-weight: bold; padding: 0px 2px 0px 2px;}
+
+.left_menu_2depth {font-family:"Tahoma"; font-Size: 11px ; color:#457A9F; text-decoration: none;  padding: 3px 2px 3px 2px;  line-height:12px; cursor:hand;}
+.left_menu_2depth  a:link {text-decoration: none ; color:#457A9F;  }
+.left_menu_2depth  a:visited {text-decoration: none ; color:#457A9F; }
+.left_menu_2depth  a:active {text-decoration: none ; color:#457A9F; }
+.left_menu_2depth  a:hover {text-decoration: none ; color:#457A9F; }
+
+.left_menu_tree {font-family:"Tahoma"; font-Size: 11px ; color:#111; text-decoration: none; padding: 3px 2px 3px 2px;  line-height:12px; cursor:hand;}
+.left_menu_tree a:link {text-decoration: none ; color:#111;}
+.left_menu_tree a:visited {text-decoration: none ; color:#111;}
+.left_menu_tree a:active {text-decoration: none ; color:#111;}
+.left_menu_tree a:hover {text-decoration: underline ; color:#457A9F;}
+
+/* left Tab */
+.left_tab {background-image: url("../img/basic/left_tab_off_bg_b.gif"); font-family:"Tahoma"; font-Size: 11px ; color:#333 ; text-decoration: none; cursor:hand; vertical-align:bottom !important }
+.left_tab a:link {text-decoration: none ; color:#333;}
+.left_tab a:visited {text-decoration: none ; color:#333;}
+.left_tab a:active {text-decoration: none ; color:#333;}
+.left_tab a:hover {text-decoration: none ; color:#333;}
+
+.left_tab_l {background-image: url("../img/basic/left_tab_off_left_b.gif"); width:4px; height:17px;}
+.left_tab_r {background-image: url("../img/basic/left_tab_off_right_b.gif"); width:4px; height:17px;}
+
+.left_tab_selected {font-family:"Tahoma"; font-Size: 11px ; color:#333; text-decoration: none; font-weight: bold; vertical-align:bottom }
+
+/* ==================== Content Area ========================== */
+/* subtitle 1depth*/
+.subtitle{
+	font-weight:bold; 
+	font-size:13px; 
+	color:#5589AD;
+	text-decoration: none;
+	line-height:16px;
+}
+
+
+/* table */
+.table_header_complex {
+	background-color: #E6EBEF;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#555;
+	font-weight:bold;
+	padding: 0px 2px 0px 2px;
+}
+
+.table_header_complex_c {
+	background-color: #E6EBEF;
+	text-align: center;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#555;
+	font-weight:bold;
+	padding: 0px 2px 0px 2px;
+}
+
+
+.table_header_complex_r{
+	background-color: #E6EBEF;
+	text-align: right;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#555;
+	font-weight:bold;
+	padding: 0px 2px 0px 2px;
+}
+
+
+.table_header_complex_d{
+	background-color: #E6EBEF;
+	text-align: right;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#555;
+	font-weight:bold;
+	padding: 1px 6px 1px 2px;
+}
+
+
+.table_header_line {
+	height: 2px;
+	background-color: #9AB0C0;
+}
+
+.table_header_sub {
+	background-color: #EFF3F7;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#555;
+	font-weight:bold;
+	padding: 0px 2px 0px 2px;
+}
+
+/* Shuttle */
+.Shuttle_header {
+	background-color: #E6EBEF;
+	height: 19px;
+	font-family: "Tahoma";
+	font-size: 11px;
+	color:#333;
+	font-weight:bold;
+	padding: 0px 2px 0px 12px;
+}
+
+/* Calendar*/
+.calendar_week {font-family:"Tahoma"; font-Size: 10px ; color:#14446F; font-weight: bold; vertical-align:bottom }
+
+.calendar_today {	font-size: 11px;  background-color: #CBBAD4; cursor:hand;}
+.calendar_today a:link {	font-size: 11px; text-decoration:none ; color:#111;}
+.calendar_today a:visited {	font-size: 11px; text-decoration:none ; color:#111;}
+.calendar_today a:active {	font-size: 11px; text-decoration:none ; color:#111;}
+.calendar_today a:hover {	font-size: 11px; text-decoration:none ; color:#111;}
+
+
+/* Sitemap*/
+.sitemap_title { font-Size: 12px ;  color:#333; font-weight: bold; background-color: #CEDAE0;  line-height:17px; 	padding: 0px 0px 0px 5px;}
+.sitemap_title  a:link {text-decoration: none ; color: #333; font-weight: bold;}
+.sitemap_title a:visited {text-decoration: none ; color: #333; font-weight: bold;}
+.sitemap_title a:active {text-decoration: underline ; color: #333; font-weight: bold;}
+.sitemap_title a:hover {text-decoration: underline ; color: #333; font-weight: bold;}
+
+
+/* BG Color */
+.bg_light, .popup_bg_bottom{
+ background-color: #E6EBEF
+}
+
+.popup_bg_top {
+   background-color: #9AB0C0
+}
+
+.leftMenu_bg_line, .calendar_bg_line {
+   background-color: #B3C7D6
+}
+.top_bg_line {
+ background-color:#4F7B9D
+  }
+.calendar_title_bg {
+ background-color:#EDF2F5
+  }
+
+/* Font */
+.font_color { color:#177498 }
